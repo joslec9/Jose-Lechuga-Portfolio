@@ -1,4 +1,4 @@
-$(document).ready(function() {  
+$(document).ready(function() {
 
 $('.arrow').hide();
 
@@ -13,7 +13,7 @@ $.backstretch([
         "img/background1.jpg"
       , "img/background2.jpg"
       , "img/background3.jpg"
-     ], {duration: 2500, fade: 750}); 
+     ], {duration: 2500, fade: 750});
 
 
 $('#submit').click(function(){
@@ -22,24 +22,24 @@ $('#success').html(response);
 
 });
 return false;
-}); 
- 
+});
+
 $(function() {
 
 $(".roll").css("opacity","0");
- 
+
 
 $(".roll").hover(function () {
- 
+
 
 $(this).stop().animate({
 opacity: .7
 }, "350");
 },
- 
+
 
 function () {
- 
+
 
 $(this).stop().animate({
 opacity: 0
@@ -48,7 +48,7 @@ opacity: 0
 });
 
 $("#back-top").hide();
-	
+
 
 $(function () {
 		$(window).scroll(function () {
@@ -90,12 +90,12 @@ $('#item_3').click(function () {
 
 $('#item_4').click(function () {
 			$('body,html').animate({
-				scrollTop: $('#content3').offset().top 
+				scrollTop: $('#content3').offset().top
 			}, 800);
 			return false;
 		});
 	});
-    
+
 
 $(function () {
 		$(window).scroll(function () {
@@ -117,8 +117,8 @@ $('#back-top a').click(function () {
 
 
 $(document).scroll(function(){
-   
-    var docScroll = $(document).scrollTop(), 
+
+    var docScroll = $(document).scrollTop(),
         boxCntOfset = $(".skills-line").position().top + 150,
         boxCntOfset1 = $("#content").offset().top - 5,
         boxCntOfset2 = $("#content1").offset().top - 5,
@@ -129,44 +129,44 @@ $(document).scroll(function(){
         boxCntOfset7 = $("#content1").position().top + 100,
         boxCntOfset8 = $("#content2").position().top + 100,
         boxCntOfset9 = $("#content3").position().top + 100;
- 
+
 
     if(docScroll >= boxCntOfset ) {
 
-      $("#line-1").css('width','65%');// EDIT % YOUR PROGRAMMING SKILL// 
-      $("#line-2").css('width','82%');// EDIT % YOUR GRAPHIC DESIGN SKILL// 
-      $("#line-3").css('width','72%');// EDIT % YOUR WORDPRESS SKILL// 
+      $("#line-1").css('width','100%');// EDIT % YOUR HTML/CSS SKILL//
+      $("#line-2").css('width','80%');// EDIT % JavaScript SKILL//
+      $("#line-3").css('width','70%');// EDIT % YOUR Responsive/web Op SKILL// 
     } else {
       $("#line-1").css('width','0px');
       $("#line-2").css('width','0px');
       $("#line-3").css('width','0px');
-    
+
     }
-    
+
     if((docScroll >= boxCntOfset1) && (docScroll <= boxCntOfset2)) {
         $("#item_1").css('color','#32323c');
     } else {
         $("#item_1").css('color','#f2f2f2');
     }
-    
+
      if((docScroll >= boxCntOfset2) && (docScroll <= boxCntOfset3)) {
         $("#item_2").css('color','#32323c');
     } else {
         $("#item_2").css('color','#f2f2f2');
     }
-    
+
     if((docScroll >= boxCntOfset3) && (docScroll <= boxCntOfset4)) {
         $("#item_3").css('color','#32323c');
     } else {
         $("#item_3").css('color','#f2f2f2');
     }
-    
+
     if(docScroll >= boxCntOfset4) {
         $("#item_4").css('color','#32323c');
     } else {
         $("#item_4").css('color','#f2f2f2');
     }
-    
+
     if(docScroll >= boxCntOfset6) {
         $("#content").css('padding-top','100px');
         $("#content").css('padding-bottom','100px');
@@ -174,7 +174,7 @@ $(document).scroll(function(){
         $("#content").css('padding-top','200px');
         $("#content").css('padding-bottom','0px');
     }
-    
+
     if(docScroll >= boxCntOfset7) {
         $("#content1").css('padding-top','100px');
         $("#content1").css('padding-bottom','100px');
@@ -182,7 +182,7 @@ $(document).scroll(function(){
         $("#content1").css('padding-top','200px');
         $("#content1").css('padding-bottom','0px');
     }
-    
+
     if(docScroll >= boxCntOfset8) {
         $("#content2").css('padding-top','100px');
         $("#content2").css('padding-bottom','100px');
@@ -190,7 +190,7 @@ $(document).scroll(function(){
         $("#content2").css('padding-top','200px');
         $("#content2").css('padding-bottom','0px');
     }
-    
+
     if(docScroll >= boxCntOfset9) {
         $("#content3").css('padding-top','100px');
         $("#content3").css('padding-bottom','100px');
@@ -198,7 +198,7 @@ $(document).scroll(function(){
         $("#content3").css('padding-top','200px');
         $("#content3").css('padding-bottom','0px');
     }
-    
-  });      
-    
-}); 
+
+  });
+
+});
