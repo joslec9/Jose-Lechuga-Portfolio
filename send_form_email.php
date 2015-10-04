@@ -3,7 +3,7 @@
 
     // EDIT THE 2 LINES BELOW AS REQUIRED
     $email_to = "joslec9@gmail.com"; //YOUR EMAIL
-    $email_subject = "Your email subject"; //YOUR SUBJECT
+    $email_subject = "Conact Me"; //YOUR SUBJECT
 
 
     function died($error) {
